@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+        document.write("<h1>tugas 1</h1>");
+        for (i = 5; i > 0; i-- ){
+          document.write("inumaki" + i +"<br />");
+        }
+        var list_siswa = [
+             {
+               nama : "jamal",
+               kelas : "10",
+               umur : 19,
+               nilai : 90
+             },
+            {
+               nama : "ucup ",
+               kelas : "10",
+               umur : 18,
+               nilai : 96
+             },
+             {
+               nama : "asep",
+               kelas : "11",
+               umur : 28,
+               nilai : 95
+             },
+             {
+               nama : "udin",
+               kelas : "12",
+               umur : 34,
+               nilai : 97
+             }
+             ];
+             document.write("<h1>list nama_siswa</h1>");
+             list_siswa.forEach( object => {
+               document.write("<br> Nama: "+object.nama+"<br>");
+               document.write("Kelas: "+object.kelas+"<br>");
+               document.write("Umur: "+object.umur+"<br>");
+               document.write("Nilai: "+object.nilai+"<br>");
+             });
+             </script>
+</body>
+</html>
