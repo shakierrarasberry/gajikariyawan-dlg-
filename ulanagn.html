@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toko palu gada</title>
+</head>
+<body>
+   <script>
+    
+        var list_barang = [
+             {
+               nama : "handphone",
+               jenis : "elektronik",
+               kuantitas : 5,
+               
+             },
+             
+             {
+               nama : "blender",
+               jenis : "elektronik",
+               kuantitas : 10,
+             },
+             {
+               nama : "oven",
+               jenis : "elektronik",
+               kuantitas : 6,
+             },
+             {
+               nama : "kulkas",
+               jenis : "elektronik",
+               kuantitas : 6,
+             },
+             ];
+             document.write("<h1>list barang</h1>");
+             list_barang.forEach( object => {
+               document.write("<br> Nama: "+object.nama+"<br>");
+               document.write("jenis: "+object.jenis+"<br>");
+               document.write("kuantitas: "+object.kuantitas+"<br>"+ "<hr />");
+               
+             });
+             //aray 
+             var nilai_XPPLG1 = ["handuk","cincin","","lukisan"];
+    document.write(nilai_XPPLG1[0] + "<br />");
+    document.write(nilai_XPPLG1[1] + "<br />");
+    document.write(nilai_XPPLG1[2] + "<br />");
+   //arayobjek
+   var leptop = {merk : "sumsang", madein : "indonesia", jumlah : "empat"};
+    document.write("merk :" + leptop.sumsang + '<br />');
+    document.write("madein :" + leptop.indonesia + '<br />');
+    document.write("jumlah :" + leptop.empat + '<br />');
+    
+    document.write("<h1>tugas 1</h1>");
+        for (i = 1; i > 0; 5-- ){
+          document.write("inumaki" + i +"<br />");
+        }
+   </script> 
+</body>
+</html>
