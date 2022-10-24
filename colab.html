@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var kkm = 75;
+        var list_siswa = [
+        {
+            nama : "satria",
+            kelas : "10",
+            nilai : 80,
+            nilai_mtk : 98,
+            nilai_bahasa_inggris : 87,
+            nilai_fisika : 89,
+
+        },
+        {
+            nama : "udip",
+            kelas : "10",
+            nilai : 77,
+            nilai_mtk : 98,
+            nilai_bahasa_inggris : 67,
+            nilai_fisika : 89,
+
+        },
+        {
+            nama : "udin",
+            kelas : "10",
+            nilai :70 ,
+            nilai_mtk : 58,
+            nilai_bahasa_inggris : 77,
+            nilai_fisika : 99,
+
+        },
+        ];
+             document.write("<h1>list nama_siswa</h1>");
+             list_siswa.forEach( nama => {
+               document.write("<br> Nama: "+nama.nama+"<br>");
+               document.write("Kelas: "+nama.kelas+"<br>");
+               
+               document.write("nilai: "+nama.nilai+"<br>");
+               document.write("Nilai mtk: "+nama.nilai_mtk+"<br>");
+               document.write("Nilai bahasa inggris: "+nama.nilai_bahasa_inggris+"<br>");
+               document.write("Nilai fisika: "+nama.nilai_fisika+"<br>" );
+               if (nama.nilai_mtk > kkm){
+                document.write("status : lulus" + "<br>");
+               }else{
+                document.write("anda tidak lulus");
+               }
+               document.write("<hr />")
+             });
+        
+    
+    </script>
+</body>
+</html>
