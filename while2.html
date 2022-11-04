@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    var listnama = [];
+  var nama = confirm("Apakah anda ingin membuka hati lagi?");
+  var i = 0;
+  while(nama){
+    var nama = prompt("Masukan Nama");
+    listnama.push(nama);
+    document.write((i + 1) + ". " + listnama[i] + "<br>");
+    nama = confirm("Apakah anda ingin memasukan nama lagi?");
+    i++;
+    
+  }
+       document.write("anda telah menginput" + i + " nama");
+   </script> 
+</body>
+</html>
