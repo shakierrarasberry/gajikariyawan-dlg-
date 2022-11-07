@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>main kertas gnting batu</title>
+</head>
+<body>
+<script>
+  function mainkrtsgntngbtu (pilihan1, pilihan2){
+    if(pilihan1=="batu"&& pilihan2=="gunting"){
+    document.write("lagi hoki aja,jadinya menang hhh" + "<br/>")}
+    else if(pilihan1=="batu"&& pilihan2=="kertas"){
+    document.write("yhahaha mampus kalah" + "<br/>")}
+    else if(pilihan1=="gunting"&& pilihan2=="gunting"){
+    document.write("aelah ngikutin mulu sie,jadinya seri hmch" + "<br/>")}
+        }
+       mainkrtsgntngbtu   ("batu", "gunting")
+       mainkrtsgntngbtu ("batu", "kertas")
+       mainkrtsgntngbtu  ("gunting", "gunting")
+ </script>
