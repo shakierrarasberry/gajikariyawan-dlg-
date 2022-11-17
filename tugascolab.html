@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var pembeli = [
+            {
+                nama : 'udin',
+                barang : [ 
+                    {nama : "roti",harga : 1000,jumlah : 7},
+                    {nama : 'mobil', harga : 10000,jumlah : 2}
+            ]
+            },
+            {
+                nama : 'ucup',
+                barang : [ 
+                    {nama : "sabuncolek",harga : 2500 ,jumlah : 9},
+                    {nama : 'bukanbuah', harga : 10000,jumlah :6}
+                         ]
+
+            }
+        ];
+        pembeli.forEach (p=> {
+            document.write (`nama : ${p.nama} <br />`)
+            p.barang.forEach(barang => {
+                document.write (` barang : ${barang.nama} (${barang.harga* barang.jumlah})},`);
+               
+            })
+            document.write("<hr />");
+        });
+
+          
+    </script>
+    
+</body>
+</html>
