@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nama ={
+            namaseseorang : "udin",
+            warna_kulit : "sawo matang",
+            jumlah_kaki : 2,
+            rambut : "ikal",
+            bentuk_mata : "sipit",
+            
+            mata :{
+                warna_mata : "coklat muda",
+                warna_pupil : "hitam",
+            },
+            dipanggil: function(){
+                return "cuek"
+            },
+            tidur : function (){
+                return"tidur di kasur ";
+            },   
+            hobby : function (){
+                return"main game ";
+            },    
+        }
+        document.write (`ini namanya : ${nama.namaseseorang}`+ "<br />" );
+        document.write ("warna kulit : " + nama.warna_kulit + "<br />")
+        document.write ("jumlah kaki : " + nama.jumlah_kaki + "<br />")
+        document.write ("rambut : " + nama.rambut + "<br />")
+        document.write ("bentuk mata : " + nama.bentuk_mata + "<br />")
+        document.write("warna mata : " + nama.mata.warna_mata + "<br />" ) 
+        document.write("warna pupil : " + nama.mata.warna_pupil + "<br />" ) 
+        document.write("dipanggil : " + nama.dipanggil() + "<br />" ) 
+        document.write("tidur di : " + nama.tidur() + "<br />" )
+        document.write("hobby nya : " + nama.hobby() + "<br />" )
+       
+
+    </script>
+</body>
+</html>
