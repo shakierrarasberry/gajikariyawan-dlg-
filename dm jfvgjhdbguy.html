@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class bangun_ruang {
+            p = 2;
+            l = 4;
+            t = 10;
+            
+
+            
+        }
+        class balok extends bangun_ruang {
+            volume(){
+                return this.p * this.l * this.t 
+            }
+        
+            s = 5
+            kubus(){
+                return this.s * this.s * this.s
+            }
+        
+            V = 3;
+            L = (10 * 10);
+            T = 6
+            limas_segi_empat(){
+                return this.V * this.L * this.T
+            }
+        
+            N = 7;
+            R = 10;
+            TI = 3;
+            tabung(){
+                return this.N * this.R * this.TI
+            }
+        
+    }
+
+         var balok1 = new balok();
+        document.write("hasil perhitungan dari balok1 adalah = " +balok1.volume()+'<br />' + "<hr />")
+        document.write("hasil perhitungan dari limas1 adalah = " +balok1.kubus()+'<br />')
+        document.write("hasil perhitungan dari limas segi empat adalah = " +balok1.limas_segi_empat()+'<br />')
+        document.write("hasil perhitungan dari tabung adalah = " +balok1.tabung()+'<br />')
+
+    </script>
+</body>
+</html>
