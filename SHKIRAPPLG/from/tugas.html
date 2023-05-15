@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div id="wrapper">
+    <p>ini paragraf 1</p>
+    <p>ini paragraf 2</p>
+    <p>ini paragraf 3</p>
+    <p>ini paragraf 4</p>
+
+        <div id="udin">
+        <h1>ini judul</h1>
+        <div id="bapaklu">
+            <p>komentar 1</p>
+            <p>komentar 2</p>
+            <p>komentar 3</p>
+        </div>
+    </div>
+</div> 
+<script>
+      var tag_parent = document.getElementById("wrapper");
+    console.log(tag_parent.parentNode);
+    console.log(tag_parent.children[0]);
+    console.log(tag_parent.children[1]);
+    console.log(tag_parent.children[2]);
+    console.log(tag_parent.children[3]);
+   var tag_div = document.getElementById("udin");
+   console.log(tag_div.children[0]);
+    var tag_div2 = document.getElementById("bapaklu");
+   console.log(tag_div2.children[0]);
+   console.log(tag_div2.children[1]);
+   console.log(tag_div2.children[2]);
+</script>
+</body>
+</html>
